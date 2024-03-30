@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditPostActivity">
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:background="#759CDA"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:gravity="center_vertical"
+
+        android:outlineAmbientShadowColor="#B71C1C"
+        android:shadowColor="#1A237E"
+        android:shadowDx="7"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+
+        android:text="Sưa bài viết"
+        android:textColor="#0D47A1"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtUrlAvt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Link avt"
+                android:layout_weight="1"
+
+                android:paddingStart="20dp"
+                android:textColor="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvt"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/edittext_background" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:hint="UserName" />
+
+        <EditText
+            android:id="@+id/edtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:hint="Status" />
+
+        <EditText
+            android:id="@+id/edtLinkImgContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:hint="Link image" />
+
+        <ImageView
+            android:id="@+id/imgContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:srcCompat="@drawable/edittext_background" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Sửa" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
